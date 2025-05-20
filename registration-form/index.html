@@ -9,39 +9,28 @@
   <div class="container">
     <h2><b><u>Registration Form</u></b></h2>
     
-    <form>
+    <form id="RegistrationForm">
       <fieldset>
         <legend><h4>Personal Details</h4></legend>
         <div class="form-row">
           <div class="form-group">
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter full name">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" required placeholder="Enter full name">
           </div>
           <div class="form-group">
-            <label>Date of Birth</label>
-            <input type="date">
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="Enter email">
-          </div>
-          <div class="form-group">
-            <label>Mobile Number</label>
-            <input type="tel" placeholder="Enter mobile number">
+            <label for="date">Date of Birth</label>
+            <input type="date" id="date" required >
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label>Gender</label>
-            <input type="text" placeholder="Enter gender">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required placeholder ="ex:abcd@gmail.com">
           </div>
           <div class="form-group">
-            <label>Occupation</label>
-            <input type="text" placeholder="Enter occupation">
+            <label for="Mobile">Mobile Number</label>
+            <input type="tel" id="Mobile" required placeholder="ex:0000000000">
           </div>
         </div>
       </fieldset>
@@ -50,40 +39,37 @@
         <legend><h4>Identity Details</h4></legend>
         <div class="form-row">
           <div class="form-group">
-            <label>ID Type</label>
-            <input type="text" placeholder="Enter ID type">
+            <label for="idNo">student ID</label>
+            <input type="tel" id="idNo." required placeholder="ex:DB1864">
           </div>
+
           <div class="form-group">
-            <label>ID Number</label>
-            <input type="text" placeholder="Enter ID number">
+            <label for="department">Department</label>
+            <input type="text" id="dept" required placeholder="enter your dept">
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label>Issue Authority</label>
-            <input type="text" placeholder="Enter issue authority">
+            <label for="specialization"> specialization</label>
+            <input type="text" id="specialization" required placeholder="enter your branch">
           </div>
           <div class="form-group">
-            <label>Issue Date</label>
-            <input type="date">
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label>Issue State</label>
-            <input type="text" placeholder="Enter issue state">
-          </div>
-          <div class="form-group">
-            <label>Expiry Date</label>
-            <input type="date">
+            <label for="year">year</label>
+            <select id="year" name="year" required>
+              <option value="" disabled selected>persuing year</option>
+              <option value="1">1st year</option>
+              <option value="2">2nd year</option>
+              <option value="3">3rd year</option>
+              <option value="4">4th year</option>
+            </select>
           </div>
         </div>
       </fieldset>
 
-      <button type="submit"><b>Register Now</b></button>
+      <button type="submit"><b>SUBMIT</b></button>
     </form>
+    <script src="script.js"></script>
   </div>
 </body>
 </html>
